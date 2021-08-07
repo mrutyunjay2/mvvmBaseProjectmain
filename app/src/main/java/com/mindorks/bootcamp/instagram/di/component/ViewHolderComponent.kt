@@ -11,5 +11,6 @@ import dagger.Component
     modules = [ViewHolderModule::class]
 )
 interface ViewHolderComponent {
+
     fun inject(viewHolder: DummyItemViewHolder)
 }
