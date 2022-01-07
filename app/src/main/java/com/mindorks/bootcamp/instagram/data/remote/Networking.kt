@@ -35,7 +35,7 @@ object Networking {
                     .writeTimeout(NETWORK_CALL_TIMEOUT.toLong(), TimeUnit.SECONDS)
                     .build()
             )
-            .addConverterFactory(  GsonConverterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
             .create(NetworkService::class.java)

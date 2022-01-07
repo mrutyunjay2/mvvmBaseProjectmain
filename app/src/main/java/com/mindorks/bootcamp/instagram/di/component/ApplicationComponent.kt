@@ -37,7 +37,7 @@ interface ApplicationComponent {
      */
     fun getNetworkService(): NetworkService
 
-    fun getDatabaseService(): DatabaseService
+   // fun getDatabaseService(): DatabaseService
 
     fun getSharedPreferences(): SharedPreferences
 

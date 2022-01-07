@@ -49,14 +49,14 @@ class ApplicationModule(private val application: InstagramApplication) {
      * We need to write @Singleton on the provide method if we are create the instance inside this method
      * to make it singleton. Even if we have written @Singleton on the instance's class
      */
-    @Provides
+    /*@Provides
     @Singleton
     fun provideDatabaseService(): DatabaseService =
         Room.databaseBuilder(
             application, DatabaseService::class.java,
             "bootcamp-instagram-project-db"
         ).build()
-
+*/
     @Provides
     @Singleton
     fun provideNetworkService(): NetworkService =

@@ -9,6 +9,7 @@ import com.mindorks.bootcamp.instagram.ui.base.BaseActivity
 import com.mindorks.bootcamp.instagram.ui.login.LoginActivity
 import com.mindorks.bootcamp.instagram.ui.main.MainActivity
 import com.mindorks.bootcamp.instagram.utils.common.Event
+import com.mindorks.bootcamp.jetpackComponeet.EmployeeActivity
 
 class SplashActivity : BaseActivity<SplashViewModel>() {
 
@@ -31,7 +32,7 @@ class SplashActivity : BaseActivity<SplashViewModel>() {
         // view model also provided the Bundle in the event that is needed for the Activity
         viewModel.launchLogin.observe(this, Observer<Event<Map<String, String>>> {
             it.getIfNotHandled()?.run {
-                startActivity(Intent(applicationContext, LoginActivity::class.java))
+                startActivity(Intent(applicationContext, EmployeeActivity::class.java))
             }
         })
 

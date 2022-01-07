@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 class DummyRepository @Inject constructor(
     private val networkService: NetworkService,
-    private val databaseService: DatabaseService
+  //  private val databaseService: DatabaseService
 ) {
 
     fun fetchDummy(id: String): Single<List<Dummy>> =

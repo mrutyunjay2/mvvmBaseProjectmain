@@ -59,6 +59,9 @@ dependencies {
     // Lifecycle Annotations
     kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
 
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1")
+
+
     // Multidex
     implementation "androidx.multidex:multidex:2.0.1"
 
@@ -68,7 +71,7 @@ dependencies {
 
     // Database
     implementation "androidx.room:room-runtime:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
+    annotationProcessor("androidx.room:room-compiler:$room_version")
     implementation "androidx.room:room-rxjava2:$room_version"
 
     // Image
