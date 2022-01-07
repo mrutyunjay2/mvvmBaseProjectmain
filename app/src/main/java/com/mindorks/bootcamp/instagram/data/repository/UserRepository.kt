@@ -12,7 +12,7 @@ import javax.inject.Singleton
 @Singleton
 class UserRepository @Inject constructor(
     private val networkService: NetworkService,
-    private val databaseService: DatabaseService,
+   // private val databaseService: DatabaseService,
     private val userPreferences: UserPreferences
 ) {
 
